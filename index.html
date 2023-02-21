@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist (1)/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(11, 173, 206);">
+    <div class="mx-auto border border-info col-lg-4 col-sm-12 mt-5 bg-info shadow shadow-lg" style="height:55vh; font-family:'Times New Roman', Times, serif;position: relative; top:60px;">
+        <h1 class="text-center text-light" style="position: relative; top:35px;">Smart Stop Wacth</h1>
+        <input class="form-control w-50 mx-auto mt-4" id="hh" type="text" placeholder="HH" style="position: relative; top:40px;">
+        <input class="form-control w-50 mx-auto mt-4" id="mm" type="text" placeholder="MM" style="position: relative; top:40px;">
+        <input class="form-control w-50 mx-auto mt-4" id="ss" type="text" placeholder="SS" style="position: relative; top:40px;">
+        <button type="button" class="btn btn-danger col-sm-5 w-25  col-lg-4" style="position: relative; left:160px; top:60px;" onclick="startecounrt()">starte</button>
+    </div>
+    <script>
+        const startecounrt = ()=>{
+          if (ss.value>0){
+            ss.value--
+        setTimeout(startecounrt,1000)
+          }else{
+            if (mm.value>0) {
+                mm.value--
+                 ss.value==59
+                setTimeout(startecounrt,1000)   
+            }else{ 
+                if (hh.value>0) {
+                    hh.value--
+                    mm.value--
+                    ss.value--
+                    ss.value=59
+                    setTimeout
+                    setTimeout(startecounrt,1000) 
+                }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
